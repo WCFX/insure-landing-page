@@ -29,8 +29,8 @@ const Home = () => {
     <Container>
 
       <Header>
-        <img src={LogoInsure} alt="Imagem" />
         <Navbar>
+        <img src={LogoInsure} alt="Imagem" />
           <ul>
             <li><a href="index.html">HOW WE WORK</a></li>
             <li><a href="index.html">BLOG</a></li>
@@ -41,15 +41,20 @@ const Home = () => {
       </Header>
 
       <Section1>
-
-        <h2>Humanizing your insurance.</h2>
-        <p>Get your life insurance coverage easier and faster. We blend our expertise 
-         and technology to help you find the plan that’s right for you. Ensure you 
-         and your loved ones are protected.</p>
-         <button className="plans" ><a href="index.html">VIEW PLANS</a></button>
-        <img src={IntroFamily} alt="Imagem" />
-        <img src={IntroPatternRight} alt="Imagem" />
-        <img src={IntroPatternLeft} alt="Imagem" />
+        <div className="container-intro-1">
+          <div className="info-intro">
+            <h2>Humanizing your insurance.</h2>
+            <p>Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.</p>
+          </div>
+          <img className="Family" src={IntroFamily} alt="Imagem" />
+        </div>
+        <div className="container-intro-2"> 
+          <img className="PatternLeft" src={IntroPatternLeft} alt="Imagem" />
+          <img className="PatternRight" src={IntroPatternRight} alt="Imagem" />
+        </div>
+         {/* <button className="plans" ><a href="index.html">VIEW PLANS</a></button> */}
 
       </Section1>
 
